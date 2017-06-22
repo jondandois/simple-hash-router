@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Example hash-based client-side routing</title>
+  <link rel="stylesheet" href="switch.css">
+  <script type="text/javascript" src="router.js"></script>
+
+  <script type="text/javascript">
+    // Listen on hash change:
+    window.addEventListener('hashchange', Router.updateState);
+    // Listen on page load:
+    window.addEventListener('load', Router.updateState);
+  </script>
+</head>
+<body>
+
+  <div id="switches">
+    <div class="switch-box">
+      <span>Switch 1</span>
+      <label class="switch">
+        <input class="switch" type="checkbox" data-switch="1">
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+    <div class="switch-box">
+      <span>Switch 2</span>
+      <label class="switch">
+        <input class="switch" type="checkbox" data-switch="2">
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+    <div class="switch-box">
+      <span>Switch 3</span>
+      <label class="switch">
+        <input class="switch" type="checkbox" data-switch="3">
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="switches.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
